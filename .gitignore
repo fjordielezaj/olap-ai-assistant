@@ -1,0 +1,19 @@
+# Security: Ignore the secrets file containing your API Key
+.streamlit/secrets.toml
+
+# Safety: Ignore environment files in case they are recreated
+.env
+.flaskenv
+
+# Data: Ignore the large generated CSV (evaluators will run generate_data.py themselves)
+data/*.csv
+
+# Python: Ignore local environment and cache files
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# System: Ignore OS-specific files
+.DS_Store
+Thumbs.db
